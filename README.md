@@ -1,2 +1,4 @@
 # emails_filter
-this is script to filter emails from any email list
+This script to filter emails from any email list
+
+you should run it in python3 
