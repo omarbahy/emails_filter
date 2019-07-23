@@ -4,11 +4,11 @@ path=input("Enter the name/path of the list: ")
 file=open(path,"r")
 
 file_text=file.read()
-domains=re.findall(r"@\w+",file_text)
+domains=re.findall(r"(?<=@)\w+",file_text)
 lst=[]
 for i in domains:
-    name=i.replace("@","")
-    lst.append(name)
+    
+    lst.append(i)
 domains_list=list(set(lst))
 len_domains=len(domains_list)
 print("\n--------------------------------\nfound {} domains in this list\n--------------------------------\n\n".format(len_domains)+str(domains_list))
